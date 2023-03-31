@@ -36,7 +36,7 @@ Single_Unit_Long_Haul_Truck FLOAT(2),
 Single_Unit_Short_Haul_Truck FLOAT(2),
 Transit_bus FLOAT(2),
 Total FLOAT(2),
-PRIMARY KEY (Mname, Year, County)
+PRIMARY KEY (Mname, County, Year)
 )
 ;
 
@@ -59,3 +59,12 @@ PRIMARY KEY(Mname, County, Year)
 )
 ;
 
+\COPY municipality FROM 'Municipality.csv' DELIMITER ',' CSV HEADER;
+
+\COPY vehicles FROM 'Vehicles.csv' DELIMITER ',' CSV HEADER;
+
+\COPY total_emissions FROM 'Emissions.csv' DELIMITER ',' CSV HEADER;
+
+\COPY gas_car_emissions FROM 'Gas_car_emissions.csv' DELIMITER ',' CSV HEADER;
+
+\COPY energy FROM 'Energy.csv' DELIMITER ',' CSV HEADER;
