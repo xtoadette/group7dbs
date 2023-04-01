@@ -9,6 +9,6 @@ AND total_emissions.county = energy.county AND total_emissions.year = energy.yea
 --Create view for EV information
 CREATE VIEW evinfo
 AS SELECT vehicles.Name, vehicles.county, vehicles.year, vehicles.vehicles,
-vehicles.evs, vehicles.gas, gas_car_emissions.gas_car_emissions FROM vehicles
-JOIN gas_car_emissions ON vehicles.name = gas_car_emissions.name AND vehicles.county =
+vehicles.evs, vehicles.gas, gas_car_emissions.car_emissions FROM vehicles
+JOIN gas_car_emissions ON vehicles.name = gas_car_emissions.mname AND vehicles.county =
 gas_car_emissions.county AND vehicles.year = gas_car_emissions.year;

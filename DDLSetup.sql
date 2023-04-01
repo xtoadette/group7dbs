@@ -53,7 +53,7 @@ CREATE TABLE energy (
 Mname VARCHAR(255),
 County VARCHAR(255),
 Year INT,
-Total_electricty INT,
+Total_electricity INT,
 Total_natural_gas INT,
 PRIMARY KEY(Mname, County, Year)
 )
