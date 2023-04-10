@@ -1,12 +1,8 @@
 CREATE TABLE MUNICIPALITY (
 Name VARCHAR(255) PRIMARY KEY,
 County VARCHAR(255),
-Year INT 
-)
-;
-
-CREATE TABLE means_of_transportation (
-Vehicle_vin CHAR(17) PRIMARY KEY
+Year INT, 
+Population INT
 )
 ;
 
@@ -18,27 +14,40 @@ Car_type VARCHAR(2)
 
 CREATE TABLE electric_powered ( 
 Vehicle_vin CHAR (17) PRIMARY KEY,
-Car_model VARCHAR(255),
-Total_range INT,
-Battery_type VARCHAR(255)
+Car_model VARCHAR(255)
 )
 ; 
 
 
 CREATE TABLE emissions (
-Source  VARCHAR(225) PRIMARY KEY,
-Total_produced INT
+Mname VARCHAR(255) PRIMARY KEY,
+Year INT PRIMARY KEY,
+County VARCHAR(255),
+Combination_Long_Haul_Truck INT,
+Combination_Short_Haul_Truck INT,
+Intercity Bus_INT,
+Light_Commerical_Truck INT,
+Motor_Home INT,
+Motorcycles INT,
+Passenger_cars INT,
+Passenger_Truck INT,
+Refuse Truck INT,
+School Bus INT,
+Single Unit Long_Haul Truck INT,
+Single_Unit_Short_Haul Truck INT,
+Transit_bus INT,
+Total INT
 )
-; 
+;
+
 
 CREATE TABLE gas_powered (
-Vehicle_vin CHAR (17) PRIMARY KEY,
-Car_model VARCHAR(255),
-Emissions INT,
-Fuel_capacity INT,
-Battery_type VARCHAR(2)
+Mname VARCHAR(255) PRIMARY KEY,
+Year INT PRIMARY KEY,
+Passenger_cars_total_emission
 )
-; 
+;
+
 
 
 CREATE TABLE Energy (
@@ -46,13 +55,6 @@ Mname VARCHAR(255) PRIMARY KEY,
 Year INT,
 Total_electricty INT,
 Total_natural_gas INT
-)
-;
-
-CREATE TABLE produces (
-Vehicle_vin CHAR (17) PRIMARY KEY,
-Name VARCHAR(255),
-Source VARCHAR(255)
 )
 ;
 
