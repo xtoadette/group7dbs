@@ -1,9 +1,5 @@
 ﻿Aggregated Community-Scale Utility Energy Data,,,,,
-"Utility Acronyms: ACE - Atlantic City Electric    ETG - Elizabethtown Gas    JCPL - Jersey Central Power & Electric  MEU - Municipal Electric Utility      
-NJNG - New Jersey Natural Gas  PSEG - Public Service Electric and Gas    RECO - Rockland County Electric    SJG - South Jersey Gas ",,,,,
-Data Acronyms:   CWC - Combined with Commercial    NDA - No Data Available,,,,,
-Highlighted Data:,Data + CWC,, Data + NDA,,
-* Further information on Notes sheet,,,,,
+
 Municipality,County,Municipality,Year,Total Residential Electricity,Total Residential Natural Gas
 Aberdeen township,Monmouth,"Aberdeen township, Monmouth County",2015,"58,511,214","5,298,920"
 Aberdeen township,Monmouth,"Aberdeen township, Monmouth County",2016,NDA,"4,612,620"
