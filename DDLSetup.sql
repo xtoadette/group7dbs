@@ -33,8 +33,8 @@ Passenger_cars INT,
 Passenger_Truck INT,
 Refuse_Truck INT,
 School_Bus INT,
-Single Unit Long_Haul Truck INT,
-Single_Unit_Short_Haul Truck INT,
+Single_Unit_Long_Haul_Truck INT,
+Single_Unit_Short_Haul_Truck INT,
 Transit_bus INT,
 Total INT
 )
