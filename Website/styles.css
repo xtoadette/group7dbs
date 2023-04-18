@@ -1,0 +1,73 @@
+h1
+{
+    font-family: Courier New;
+    font-size: 72px;
+    text-align: center;
+}
+
+body
+{
+    backdrop-filter:blur(3px);
+    min-height: 100%;
+    background: url('homes.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p
+{
+    font-family: Courier New;
+    color: black;
+    text-align: center;
+}
+
+svg
+{
+    display: block;
+    margin: auto;
+}
+
+svg text
+{
+    display:none;
+}
+svg g:hover path
+{
+    fill: #8CE0D8;
+}
+
+svg g:hover text
+{
+    display:block;
+}
+
+button
+{
+  font-family: Courier New;
+  background-color: #8CD3E0;
+  border-radius: 25px;
+  border: 2px solid #039bdb;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#back
+{
+    color: black;
+    text-decoration: none;
+}
+
+#footer
+{
+    background-color: #8CE0C3;
+    padding: 20px;
+}
