@@ -1,0 +1,13 @@
+svg text
+{
+    display:none;
+}
+svg g:hover path
+{
+    fill:pink;
+}
+
+svg g:hover text
+{
+    display:block;
+}
