@@ -46,8 +46,8 @@ def index():
 
 @app.route('/sussex/', methods=['GET', 'POST'])
 def sussex():
-    rows = connect("SELECT * FROM municipality WHERE county ='Sussex';")
-    heads = ['name', 'year', 'county', 'primary key']
+    rows = connect("SELECT * FROM municipality WHERE county ='Sussex' AND year=2015;")
+    heads = ['name', 'year', 'county', 'square miles', 'population']
     return render_template('sussex.html', rows=rows, heads=heads)
 
 
