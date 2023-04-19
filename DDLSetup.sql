@@ -1,8 +1,9 @@
 CREATE TABLE MUNICIPALITY (
-Name VARCHAR(255),
+Name VARCHAR(255) PRIMARY KEY,
 County VARCHAR(255),
-Year INT, 
-PRIMARY KEY (Name, County, Year)
+Year INT,
+Square Miles FLOAT,
+Population INT
 )
 ;
 
