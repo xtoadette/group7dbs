@@ -44,7 +44,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/sussex', methods=['GET', 'POST'])
+@app.route('/sussex/', methods=['GET', 'POST'])
 def sussex():
     rows = connect("SELECT * FROM municipality WHERE county ='Sussex' AND year=2015;")
     heads = ['name', 'year', 'county', 'square miles', 'population']
