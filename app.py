@@ -43,10 +43,8 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-
-# handle venue POST and serve result web page
-@app.route('/map-handler', methods=['POST'])
-def map_handler():
+@app.route('/map-handler', methods=['GET', 'POST'])
+def sussex():
     rows = connect('SELECT * FROM municipality WHERE county = sussex;')
     heads = ['name', 'year', 'county', 'primary key']
     return render_template('sussex.html', rows=rows, heads=heads)
