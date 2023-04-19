@@ -43,7 +43,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/map-handler', methods=['GET', 'POST'])
+@app.route('/sussex', methods=['GET', 'POST'])
 def sussex():
     rows = connect('SELECT * FROM municipality WHERE county = sussex;')
     heads = ['name', 'year', 'county', 'primary key']
