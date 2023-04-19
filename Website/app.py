@@ -40,16 +40,16 @@ app = Flask(__name__)
 
 # serve form web page
 @app.route("/")
-def form():
+def index():
     return render_template('index.html')
 
 
 # handle venue POST and serve result web page
 @app.route('/map-handler', methods=['POST'])
 def map_handler():
-    rows = connect('SELECT venue_id, title FROM events WHERE venue_id = ' + request.form['venue_id'] + ';')
-    heads = ['venue_id', 'title']
-    return render_template('my-result.html', rows=rows, heads=heads)
+    rows = connect('SELECT * FROM municipality WHERE name = ' + request.form['sussex'] + ';')
+    heads = ['name', 'year', 'county', 'primary key']
+    return render_template('sussex.html', rows=rows, heads=heads)
 
 
 # handle query POST and serve result web page
