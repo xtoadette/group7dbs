@@ -47,16 +47,10 @@ def index():
 # handle venue POST and serve result web page
 @app.route('/map-handler', methods=['POST'])
 def map_handler():
-    rows = connect('SELECT * FROM municipality WHERE name = ' + request.form['sussex'] + ';')
+    rows = connect('SELECT * FROM municipality WHERE county = sussex;')
     heads = ['name', 'year', 'county', 'primary key']
-    return render_template('sussex.html', rows=rows, heads=heads)
+    return render_template('counties/sussex.html', rows=rows, heads=heads)
 
-
-# handle query POST and serve result web page
-@app.route('/query-handler', methods=['POST'])
-def query_handler():
-    rows = connect(request.form['query'])
-    return render_template('my-result.html', rows=rows)
 
 
 if __name__ == '__main__':

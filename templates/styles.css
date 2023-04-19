@@ -71,3 +71,16 @@ button
     background-color: #8CE0C3;
     padding: 20px;
 }
+
+
+#map
+{
+    width: 50%;
+    display: inline-block;
+}
+
+#information
+{
+    width: 48%;
+    display: inline-flex;
+}
