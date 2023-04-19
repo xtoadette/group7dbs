@@ -1,8 +1,9 @@
 CREATE TABLE MUNICIPALITY (
-Name VARCHAR(255) PRIMARY KEY,
+Name VARCHAR(255),
 County VARCHAR(255),
 Year INT, 
 Population INT
+PRIMARY KEY (Mane, County)
 )
 ;
 
@@ -20,8 +21,8 @@ Car_model VARCHAR(255)
 
 
 CREATE TABLE emissions (
-Mname VARCHAR(255) PRIMARY KEY,
-Year INT PRIMARY KEY,
+Mname VARCHAR(255),
+Year INT,
 County VARCHAR(255),
 Combination_Long_Haul_Truck INT,
 Combination_Short_Haul_Truck INT,
@@ -36,15 +37,17 @@ School_Bus INT,
 Single_Unit_Long_Haul_Truck INT,
 Single_Unit_Short_Haul_Truck INT,
 Transit_bus INT,
-Total INT
+Total INT,
+PRIMARY KEY (Mname, Year)
 )
 ;
 
 
 CREATE TABLE gas_powered (
-Mname VARCHAR(255) PRIMARY KEY,
-Year INT PRIMARY KEY,
-Passenger_cars_total_emission
+Mname VARCHAR(255),
+Year INT,
+Passenger_cars_total_emission INT,
+PRIMARY KEY (Mname, Year)
 )
 ;
 
