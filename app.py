@@ -5,6 +5,7 @@ from flask import Flask, render_template, request, url_for, redirect
 
 # Connect to the PostgreSQL database server
 def connect(query):
+    global rows
     conn = None
     try:
         # read connection parameters
@@ -45,8 +46,6 @@ def index():
 
 @app.route('/sussex/', methods=['GET', 'POST'])
 def sussex():
-    if request.method == 'POST':
-        return redirect(url_for('index'))
     rows = connect('SELECT * FROM municipality WHERE county = sussex;')
     heads = ['name', 'year', 'county', 'primary key']
     return render_template('sussex.html', rows=rows, heads=heads)
