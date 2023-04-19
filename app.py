@@ -1,6 +1,6 @@
 import psycopg2
 from config import config
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 
 
 # Connect to the PostgreSQL database server
@@ -43,7 +43,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/sussex', methods=['GET', 'POST'])
+@app.route('/sussex/', methods=['GET', 'POST'])
 def sussex():
     if request.method == 'POST':
         return redirect(url_for('index'))
