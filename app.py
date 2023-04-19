@@ -44,12 +44,19 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+#create emissions data for all counties (map feature)
 @app.route('/sussex/', methods=['GET', 'POST'])
 def sussex():
-    rows = connect("SELECT * FROM municipality WHERE county ='Sussex' AND year=2015;")
-    heads = ['name', 'year', 'county', 'square miles', 'population']
+    rows = connect("SELECT Mname, Combination_Long_Haul_Truck,"
+                   "Combination_Short_Haul_truck, intercity_bus, light_commercial_truck,"
+                   "motor_home, motorcycles, passenger_cars, passenger_truck, refuse_truck,"
+                   "school_bus, single_unit_long_haul_truck, single_unit_short_haul_truck, transit_bus,"
+                   "total FROM total_emissions WHERE county ='Sussex' AND year=2015;")
+    heads = ['Mname', 'Combination_Long_Haul_Truck', 'Combination_Short_Haul_truck', 'intercity_bus', 'light_commercial_truck',
+                   'motor_home', 'motorcycles', 'passenger_cars', 'passenger_truck', 'refuse_truck',
+                   'school_bus', 'single_unit_long_haul_truck', 'single_unit_short_haul_truck', 'transit_bus',
+                   'total']
     return render_template('sussex.html', rows=rows, heads=heads)
-
 
 
 if __name__ == '__main__':
