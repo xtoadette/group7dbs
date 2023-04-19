@@ -895,8 +895,8 @@ Sea Girt borough,Monmouth,2017,6215.95
 Sea Girt borough,Monmouth,2019,4883.14
 Sea Isle City city,Cape May,2015,1619.57
 Sea Isle City city,Cape May,2020,2070.54
-Seaside Heights borough,Ocean,2017,NDA
-Seaside Heights borough,Ocean,2019,NDA
+Seaside Heights borough,Ocean,2017,
+Seaside Heights borough,Ocean,2019,
 Seaside Park borough,Ocean,2017,1733.24
 Seaside Park borough,Ocean,2019,2904.27
 Secaucus town,Hudson,2017,167462.75
@@ -924,7 +924,7 @@ South Bound Brook borough,Somerset,2019,8270.50
 South Brunswick township,Middlesex,2017,138779.43
 South Brunswick township,Middlesex,2019,156142.02
 South Hackensack township,Bergen,2017,2603.82
-South Hackensack township,Bergen,2019,NDA
+South Hackensack township,Bergen,2019,
 South Harrison township,Gloucester,2015,4835.62
 South Harrison township,Gloucester,2019,4483.01
 South Orange Village township,Essex,2017,44240.26
@@ -966,7 +966,7 @@ Stratford borough,Camden,2019,8223.78
 Summit city,Union,2017,68006.31
 Summit city,Union,2019,78491.90
 Surf City borough,Ocean,2017,1265.13
-Surf City borough,Ocean,2019,NDA
+Surf City borough,Ocean,2019,
 Sussex borough,Sussex,2017,6479.47
 Sussex borough,Sussex,2019,6483.18
 Swedesboro borough,Gloucester,2015,4729.43

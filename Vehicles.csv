@@ -1129,11 +1129,3 @@ Wrightstown borough, Burlington ,2015,404,0,404
 Wrightstown borough, Burlington ,2020,384,6,378
 Wyckoff township, Bergen ,2015,11639,9,11630
 Wyckoff township, Bergen ,2020,11582,119,11463
-
-,,,,
-,Notes,,,
-,"• This Electric Vehicle Ownership Data was prepared by processing US Census American Community Survey (ACS) data and New Jersey Department of Environmental Protection’s (NJDEP’s) Alternative Fueled Vehicles (AFV) Report data.
-• To estimate the total number of personal vehicles owned in each municipality Sustainable Jersey used the vehicles available per occupied housing unit from US Census ACS data. 
-• To estimate the the number of passenger EVs in each municipality Sustainable Jersey took the total number of passenger EVs by ZIP code in NJDEP’s AFV Report data and used the US Department of Housing and Urban Development's United States Postal Service ZIP Code Crosswalk to estimate the number of EVs by NJ municipality. 
-• The year a vehicle was manufactured was used to estimate the number of vehicles in a municipality in 2015 and 2020. In other words the number of EVs in 2015 are all the EVs manufactured in 2015 or before. All the EVs in 2020 are all the EVs manufactured in 2020 or before.
-• This data does not include vehicles that are in fleets. ",,,
