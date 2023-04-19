@@ -49,7 +49,7 @@ def index():
 def map_handler():
     rows = connect('SELECT * FROM municipality WHERE county = sussex;')
     heads = ['name', 'year', 'county', 'primary key']
-    return render_template('counties/sussex.html', rows=rows, heads=heads)
+    return render_template('sussex.html', rows=rows, heads=heads)
 
 
 
