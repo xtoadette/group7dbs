@@ -1,6 +1,6 @@
 import psycopg2
 from config import config
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request, url_for, redirect
 
 
 # Connect to the PostgreSQL database server
