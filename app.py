@@ -173,7 +173,7 @@ def cumberland():
              'Electricity Emissions', 'Natural Gas Emissions']
     return render_template('cumberland.html', rows=rows, heads=heads)
 
-@app.route('/salemy/', methods=['GET', 'POST'])
+@app.route('/salem/', methods=['GET', 'POST'])
 def salem():
     rows = connect("SELECT mname, county, year, passenger_cars, total, total_electricity,"
                    "total_natural_gas FROM map WHERE county ='Salem';")
