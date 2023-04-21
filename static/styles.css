@@ -101,6 +101,8 @@ table
 {
     background-color: #8CD3E0;
     font-family: Courier New;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 tbody

@@ -216,10 +216,10 @@ def monmouth():
 #create template to render form
 @app.route('/emission-list/', methods=['POST'])
 def emission_list():
-    county_name = str(request.form)
-    rows = connect('SELECT mname, county, year FROM municipality WHERE county = ' + county_name + ';')
+    county_name = request.form['county_name']
+    rows = connect('SELECT mname, county, year FROM municipality WHERE county = ' + request.form['county_name'] + ';')
     heads = ['mname', 'county', 'year']
-    return render_template('emission-list.html', rows=rows, heads=heads)
+    return render_template('emission-list.html', rows=rows, heads=heads, county=county_name)
 
 if __name__ == '__main__':
     app.run(debug=True)
