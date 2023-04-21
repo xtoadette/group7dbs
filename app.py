@@ -214,7 +214,7 @@ def monmouth():
     return render_template('monmouth.html', rows=rows, heads=heads)
 
 #create template to render form
-@app.route('/emission-list/', methods=['POST'])
+@app.route('/emission-list', methods=['POST'])
 def emission_list():
     county_name = request.form['county_name']
     rows = connect('SELECT mname, county, year FROM municipality WHERE county = ' + request.form['county_name'] + ';')
