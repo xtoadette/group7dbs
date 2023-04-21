@@ -89,6 +89,7 @@ button
 {
     width: 50%;
     display: inline-block;
+    text-align: center;
 }
 
 #carsvg
@@ -121,3 +122,5 @@ tbody
 {
     background-color: rgba(140,224,195, 0.5);
 }
+
+
