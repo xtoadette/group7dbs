@@ -217,7 +217,7 @@ def monmouth():
 @app.route('/emission-list', methods=['POST'])
 def emission_list():
     county_name = request.form['county_name']
-    rows = connect('SELECT mname, county, year FROM municipality WHERE county = ' + request.form['county_name'] + ';')
+    rows = connect('SELECT name, county, year FROM municipality WHERE county = ' + request.form['county_name'] + ';')
     heads = ['mname', 'county', 'year']
     return render_template('emission-list.html', rows=rows, heads=heads, county_name=county_name)
 
