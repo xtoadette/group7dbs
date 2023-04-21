@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="../static/styles.css">
     <meta charset="UTF-8">
     <title>Passenger Vehicle Emissions</title>
 </head>
 <body>
   <button id="back_button"><a href="{{ url_for('index') }}" id="back">Back</a></button>
   <h1>Emissions for {{county_name}}</h1>
+  <div class="interactive-content">
   <p>Emissions shown in metric tons of carbon dioxide.</p>
 <table>
             <!-- column header for loop in jinja template -->
@@ -28,5 +30,6 @@
             {%endfor%}
             </tbody>
         </table>
+      </div>
 </body>
 </html>
