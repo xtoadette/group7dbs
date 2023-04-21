@@ -213,6 +213,13 @@ def monmouth():
              'Electricity Emissions', 'Natural Gas Emissions']
     return render_template('monmouth.html', rows=rows, heads=heads)
 
+#create template to render form
+@app.route('/emission-list/', methods=['POST'])
+def emission_list():
+    county_name = str(request.form)
+    rows = connect('SELECT mname, county, year FROM municipality WHERE county = ' + county_name + ';')
+    heads = ['mname', 'county', 'year']
+    return render_template('emission-list.html', rows=rows, heads=heads)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -7,8 +7,8 @@ h1
 
 body
 {
-    backdrop-filter:blur(3px);
     min-height: 100%;
+    backdrop-filter:blur(3px);
     background: url('homes.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -29,11 +29,11 @@ svg
     margin: auto;
 }
 
-svg text
+#svgmap text
 {
     display:none;
 }
-svg g:hover path
+#svgmap g:hover path
 {
     fill: #8CE0D8;
 }
@@ -83,4 +83,39 @@ button
 {
     width: 48%;
     display: inline-flex;
+}
+
+#query-handler
+{
+    width: 50%;
+    display: inline-block;
+}
+
+#carsvg
+{
+    width: 48%;
+    display: inline-flex;
+}
+
+table
+{
+    background-color: #8CD3E0;
+    font-family: Courier New;
+}
+
+tbody
+{
+    background-color: white;
+}
+
+#car
+{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.interactive-content
+{
+    background-color: rgba(140,224,195, 0.5);
 }
