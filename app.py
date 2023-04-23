@@ -5,7 +5,6 @@ from flask import Flask, render_template, request, url_for, redirect
 
 # Connect to the PostgreSQL database server
 def connect(query):
-    global rows
     conn = None
     try:
         # read connection parameters
