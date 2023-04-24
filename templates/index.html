@@ -763,7 +763,7 @@ function myFunction() {
             </tbody>
         </table>
 
-    <p>How many EVs does each municipality have?</p>
+    <p>How many EVs does each municipality have as of 2020?</p>
     <table>
             <thead>
                 <tr>
@@ -783,7 +783,7 @@ function myFunction() {
             </tbody>
         </table>
 
-    <p>How many gas cars does each municipality have?</p>
+    <p>How many gas cars does each municipality have as of 2020?</p>
     <table>
             <thead>
                 <tr>
@@ -822,28 +822,6 @@ function myFunction() {
             {%endfor%}
             </tbody>
         </table>
-
-    <p>What is the total emissions for cars in each municipality?</p>
-    <table>
-            <thead>
-                <tr>
-                {%for head in heads7%}
-                    <th>{{head}}</th>
-                {%endfor%}
-                </tr>
-            </thead>
-            <tbody>
-            {%for row in rows7%}
-                <tr>
-                {%for col in row%}
-                    <td>{{col}}</td>
-                {%endfor%}
-                </tr>
-            {%endfor%}
-            </tbody>
-        </table>
-
-</div>
 </div>
 
 <div id="footer">
