@@ -46,7 +46,7 @@ svg g:hover text
 button
 {
   font-family: Courier New;
-  background-color: #8CD3E0;
+  background-color: #8CE0C3;
   border-radius: 25px;
   border: 2px solid #039bdb;
   color: black;
@@ -118,9 +118,7 @@ tbody
     margin: auto;
 }
 
-.interactive-content
+.content
 {
     background-color: rgba(140,224,195, 0.5);
 }
-
-
