@@ -66,7 +66,7 @@ def index():
 
     return render_template('index.html', rows1=rows1, rows2=rows2, rows3=rows3,
                            rows4=rows4, rows5=rows5, rows6=rows6,
-                           rows7=rows7, heads1=heads1, heads2=heads2, heads3=heads3,
+                    	   heads1=heads1, heads2=heads2, heads3=heads3,
                            heads4=heads4, heads5=heads5, heads6=heads6)
 
 #create emissions data for all counties (map feature)

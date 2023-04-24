@@ -122,3 +122,13 @@ tbody
 {
     background-color: rgba(140,224,195, 0.5);
 }
+
+#showContent
+{
+	margin-top: 50px;
+}
+
+#researchDiv:
+{
+	display: none;
+}
