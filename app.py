@@ -41,7 +41,29 @@ app = Flask(__name__)
 # serve form web page
 @app.route("/")
 def index():
-    return render_template('index.html')
+    rows1 = connect("SELECT SUM(combination_long_haul_truck), SUM (combination_short_haul_truck), "
+                   "SUM(intercity_bus), SUM(light_commercial_truck), SUM(motor_home), SUM(motorcycles), "
+                   "SUM(passenger_cars), SUM(passenger_truck), SUM(refuse_truck), SUM(school_bus), "
+                   "SUM(single_unit_long_haul_truck), SUM(single_unit_short_haul_truck), SUM(transit_bus) "
+                   "FROM total_emissions WHERE year >= 2019;")
+    heads1 = ['Combination Long Haul Truck', 'Combination Short Haul Truck', 'Intercity Bus',
+              'Commercial Truck', 'Motor Home', 'Motorcycle', 'Passenger Car'
+              , 'Refuse Truck', 'School Bus', 'Single Long Haul Truck', 'Single Short Haul Truck',
+              'Transit Bus']
+
+    rows2 = connect("SELECT County, SUM(Total) AS Total_emissions FROM Total_emissions GROUP BY County;")
+    heads2 = ['County', 'Total Emissions (Metric Tons)']
+
+    rows3 = connect("SELECT  M.Name, M.County, TE.Year, TE.Total FROM Total_emissions TE JOIN municipality M ON "
+                    "TE.Mname = M.Name AND TE.County = M.County AND TE.Year = M.Year WHERE  TE.Year IN (2015, 2017, 2019, 2020) "
+                    "AND TE.Total = (SELECT MAX(Total) FROM Total_emissions WHERE Mname = TE.Mname AND County = TE.County AND Year = TE.Year);")
+    heads3 = ['Municipality', 'County', 'Year', 'Total Emissions']
+
+
+    return render_template('index.html', rows1=rows1, rows2=rows2, rows3=rows3,
+                           rows4=rows4, rows5=rows5, rows6=rows6,
+                           rows7=rows7, heads1=heads1, heads2=heads2, heads3=heads3,
+                           heads4=heads4, heads5=heads5, heads6=heads6, heads7=heads7)
 
 #create emissions data for all counties (map feature)
 @app.route('/sussex/', methods=['GET', 'POST'])

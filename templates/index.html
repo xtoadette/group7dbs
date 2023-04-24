@@ -2,6 +2,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="../static/styles.css">
+<script>
+function myFunction() {
+  var x = document.getElementById("researchDiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}</script>
 <head>
     <meta charset="UTF-8">
     <title>Group 7 Sustainability</title>
@@ -690,6 +699,150 @@
       </g>
     </svg>
     </div>
+</div>
+    <button onclick="myFunction()" id="showContent">Click for Research Questions</button>
+<div id="researchDiv">
+
+<p>Which type of gas powered vehicle generates the most emissions?</p>
+    <table>
+            <thead>
+                <tr>
+                {%for head in heads1%}
+                    <th>{{head}}</th>
+                {%endfor%}
+                </tr>
+            </thead>
+            <tbody>
+            {%for row in rows1%}
+                <tr>
+                {%for col in row%}
+                    <td>{{col}}</td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+
+    <p>Which county generates the most emissions?</p>
+    <table>
+            <thead>
+                <tr>
+                {%for head in heads2%}
+                    <th>{{head}}</th>
+                {%endfor%}
+                </tr>
+            </thead>
+            <tbody>
+            {%for row in rows2%}
+                <tr>
+                {%for col in row%}
+                    <td>{{col}}</td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+
+    <p>Which year generated the most emissions per municipality?</p>
+    <table>
+            <thead>
+                <tr>
+                {%for head in heads3%}
+                    <th>{{head}}</th>
+                {%endfor%}
+                </tr>
+            </thead>
+            <tbody>
+            {%for row in rows3%}
+                <tr>
+                {%for col in row%}
+                    <td>{{col}}</td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+
+    <p>How many EVs does each municipality have?</p>
+    <table>
+            <thead>
+                <tr>
+                {%for head in heads4%}
+                    <th>{{head}}</th>
+                {%endfor%}
+                </tr>
+            </thead>
+            <tbody>
+            {%for row in rows4%}
+                <tr>
+                {%for col in row%}
+                    <td>{{col}}</td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+
+    <p>How many gas cars does each municipality have?</p>
+    <table>
+            <thead>
+                <tr>
+                {%for head in heads5%}
+                    <th>{{head}}</th>
+                {%endfor%}
+                </tr>
+            </thead>
+            <tbody>
+            {%for row in rows5%}
+                <tr>
+                {%for col in row%}
+                    <td>{{col}}</td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+
+    <p>How many vehicles does each municipality have as of 2020?</p>
+    <table>
+            <thead>
+                <tr>
+                {%for head in heads6%}
+                    <th>{{head}}</th>
+                {%endfor%}
+                </tr>
+            </thead>
+            <tbody>
+            {%for row in rows6%}
+                <tr>
+                {%for col in row%}
+                    <td>{{col}}</td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+
+    <p>What is the total emissions for cars in each municipality?</p>
+    <table>
+            <thead>
+                <tr>
+                {%for head in heads7%}
+                    <th>{{head}}</th>
+                {%endfor%}
+                </tr>
+            </thead>
+            <tbody>
+            {%for row in rows7%}
+                <tr>
+                {%for col in row%}
+                    <td>{{col}}</td>
+                {%endfor%}
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+
 </div>
 </div>
 
