@@ -1,5 +1,5 @@
 CAB Project 7\
-Stephanie Contino, Srujana Endreddy, Ayesha Chaudry, Geethika Manojkumar\
+Stephanie Contino, Srujana Endreddy, Ayesha Chaudhry, Geethika Manojkumar\
 \
 INITIALIZING THE DATABASE\
 (as outlined in DDLSetup)
