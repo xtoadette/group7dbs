@@ -47,7 +47,7 @@ def index():
               , 'Refuse Truck', 'School Bus', 'Single Long Haul Truck', 'Single Short Haul Truck',
               'Transit Bus']
 
-    rows2 = connect("SELECT County, SUM(Total) AS Total_emissions FROM Total_emissions GROUP BY County;")
+    rows2 = connect("SELECT County, SUM(Total) AS Total_emissions FROM Total_emissions GROUP BY County ORDER BY Total_emissions DESC;")
     heads2 = ['County', 'Total Emissions (Metric Tons)']
 
     rows3 = connect("SELECT  M.Name, M.County, TE.Year, TE.Total FROM Total_emissions TE JOIN municipality M ON "
