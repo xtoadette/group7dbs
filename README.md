@@ -25,7 +25,7 @@ Clone the repository or download it and paste it into a new folder for the proje
       \q
 
       #run flask app
-      EXPORT FLASK_APP=app.py
+      export FLASK_APP=app.py
       flask run
 ```
 A link to navigate to the website will then appear.  The web server can be closed with CTRL + C once the user is finished.
