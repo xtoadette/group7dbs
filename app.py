@@ -43,7 +43,7 @@ app = Flask(__name__)
 def index():
     rows1 = connect("SELECT SUM(combination_long_haul_truck), SUM (combination_short_haul_truck), SUM(intercity_bus), SUM(light_commercial_truck), SUM(motor_home), SUM(motorcycles), SUM(passenger_cars), SUM(passenger_truck), SUM(refuse_truck), SUM(school_bus), SUM(single_unit_long_haul_truck), SUM(single_unit_short_haul_truck), SUM(transit_bus) FROM total_emissions WHERE year >= 2019;")
     heads1 = ['Combination Long Haul Truck', 'Combination Short Haul Truck', 'Intercity Bus',
-              'Commercial Truck', 'Motor Home', 'Motorcycle', 'Passenger Car'
+              'Commercial Truck', 'Motor Home', 'Motorcycle', 'Passenger Car', 'Passenger Truck'
               , 'Refuse Truck', 'School Bus', 'Single Long Haul Truck', 'Single Short Haul Truck',
               'Transit Bus']
 
