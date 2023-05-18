@@ -1,4 +1,5 @@
 createdb proj7
 psql proj7
 \i DDLSetup.sql
-\s DDLSetup
+\i DMLQueries.sql
+\s Setup

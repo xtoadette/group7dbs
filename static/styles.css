@@ -1,0 +1,135 @@
+h1
+{
+    font-family: Courier New;
+    font-size: 72px;
+    text-align: center;
+}
+
+body
+{
+    min-height: 100%;
+    backdrop-filter:blur(3px);
+    background: url('homes.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+p
+{
+    font-size: 20px;
+    font-family: Courier New;
+    color: black;
+    text-align: center;
+}
+
+svg
+{
+    display: block;
+    margin: auto;
+}
+
+#svgmap text
+{
+    display:none;
+}
+#svgmap g:hover path
+{
+    fill: #8CE0D8;
+}
+
+svg g:hover text
+{
+    display:block;
+}
+
+button
+{
+  font-family: Courier New;
+  background-color: #8CE0C3;
+  border-radius: 25px;
+  border: 2px solid #039bdb;
+  color: black;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#back
+{
+    color: black;
+    text-decoration: none;
+}
+
+#footer
+{
+    background-color: #8CE0C3;
+    padding: 20px;
+}
+
+
+#map
+{
+    width: 50%;
+    display: inline-block;
+}
+
+#information
+{
+    width: 48%;
+    display: inline-flex;
+}
+
+#query-handler
+{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+
+#carsvg
+{
+    width: 48%;
+    display: inline-flex;
+}
+
+table
+{
+    background-color: #8CE0C3;
+    font-family: Courier New;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tbody
+{
+    background-color: white;
+}
+
+#car
+{
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+.content
+{
+    background-color: rgba(140,224,195, 0.5);
+}
+
+#showContent
+{
+	margin-top: 50px;
+}
+
+#researchDiv:
+{
+	display: none;
+}
